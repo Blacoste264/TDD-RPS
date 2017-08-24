@@ -20,6 +20,17 @@ describe('rockPaperScissors', function () {
         it('Should return tie on "scissors" "scissors"', function () {
             expect(rockPaperScissors("scissors", "scissors")).to.equal("tie");
         })
+    describe('Player a winning scenarios', function () {
+        it('Should return a on "rock", "scissors"', function () {
+            expect(rockPaperScissors("rock", "scissors")).to.equal("a");
+        })
+        it('Should return a on "scissors, "paper"', function () {
+            expect(rockPaperScissors("scissors", "paper")).to.equal("a");
+        })
+        it('Should return a on "paper", "rock"', function () {
+            expect(rockPaperScissors("paper", "rock")).to.equal("a");
+        })
+    })
 
     })
 })
