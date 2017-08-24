@@ -12,7 +12,13 @@ describe('rockPaperScissors', function () {
     })
     describe('Tie Conditions', function() {
         it('Should return "tie" on "rock "rock"', function () {
-            
+            expect(rockPaperScissors("rock", "rock")).to.equal("tie");
+        })
+        it('Should return tie on "paper" "paper"', function () {
+            expect(rockPaperScissors("paper", "paper")).to.equal("tie");
+        })
+        it('Should return tie on "scissors" "scissors"', function () {
+            expect(rockPaperScissors("scissors", "scissors")).to.equal("tie");
         })
 
     })
