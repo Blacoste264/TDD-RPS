@@ -8,7 +8,7 @@ module.exports = {
                   a === "scissors" && b === "paper" ) {
                       return "a";
                   }
-        return false;
+        return "b";
 
     }
 
